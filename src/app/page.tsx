@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import HeroButton from '@/components/HeroButton';
 import Image from 'next/image';
+import StrategySection from '@/components/StrategySection';
 
 export default function Home() {
   return (
@@ -204,6 +205,176 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Services Section */}
+      <div
+        style={{
+          position: 'relative',
+          width: '100%',
+          minHeight: '100vh',
+          backgroundColor: '#00488C',
+          fontFamily: 'var(--font-poppins), Poppins, sans-serif',
+          overflow: 'hidden',
+          display: 'flex',
+          alignItems: 'center',
+        }}
+      >
+        {/* Decorative overlay — services1 (full width, offset from top) */}
+        <Image
+          src="/services1.webp"
+          alt=""
+          width={1400}
+          height={800}
+          className="top-[8%] sm:top-[10%] md:top-[12%]"
+          style={{
+            position: 'absolute',
+            left: 0,
+            width: '100%',
+            height: 'auto',
+            maxWidth: '100%',
+            zIndex: 0,
+            pointerEvents: 'none',
+            transform: 'translateY(10px)',
+          }}
+        />
+
+        {/* Decorative overlay — services2 (bottom-right) */}
+        <Image
+          src="/services2.webp"
+          alt=""
+          width={700}
+          height={700}
+          className="w-[65%] sm:w-[55%] md:w-[40%]"
+          style={{
+            position: 'absolute',
+            bottom: 0,
+            right: 0,
+            height: 'auto',
+            maxWidth: '100%',
+            zIndex: 0,
+            pointerEvents: 'none',
+          }}
+        />
+
+        {/* Two-column content */}
+        <div
+          style={{
+            position: 'relative',
+            zIndex: 1,
+            maxWidth: '1400px',
+            width: '100%',
+            padding: '80px 64px',
+            margin: '0 auto',
+          }}
+        >
+          {/* Heading */}
+          <h2
+            className="text-[1.75rem] sm:text-[2.2rem] md:text-[2.9rem]"
+            style={{
+              color: '#ffffff',
+              fontWeight: 600,
+              marginBottom: '48px',
+              lineHeight: 1.10,
+              transform: 'scaleY(1.0)',
+              transformOrigin: 'top left',
+              display: 'block',
+              fontFamily: 'var(--font-poppins), Poppins, sans-serif',
+            }}
+          >
+            Our Complete<br />array of services
+          </h2>
+
+          {/* Images row */}
+          <div className="flex flex-col sm:flex-row gap-6 sm:gap-10 md:gap-14">
+            {/* Card 1 */}
+            <div className="flex-1 rounded-[18px] sm:rounded-[35px]" style={{ position: 'relative', overflow: 'hidden' }}>
+              <Image
+                src="/s1.webp"
+                alt="Leasing Support"
+                width={600}
+                height={400}
+                className="w-full h-auto"
+                style={{ display: 'block' }}
+              />
+              <div style={{
+                position: 'absolute', inset: 0,
+                background: 'linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 60%)',
+                borderRadius: '16px',
+              }} />
+              <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '16px 20px 22px 28px' }}>
+                <p style={{ color: '#fff', fontWeight: 500, fontSize: '1.32rem', lineHeight: 1.2, marginBottom: '4px', fontFamily: 'var(--font-poppins), Poppins, sans-serif' }}>
+                  Leasing Support
+                </p>
+                <p style={{ color: 'rgba(255,255,255,0.85)', fontWeight: 400, fontSize: '0.75rem', lineHeight: 1.6, fontFamily: 'var(--font-poppins), Poppins, sans-serif', margin: 0, paddingRight: '56px' }}>
+                  Operating lease placement and transition
+                </p>
+              </div>
+              <div className="bg-[#41BEF0] hover:bg-[#2A9AC4] transition-colors duration-200" style={{ position: 'absolute', bottom: '18px', right: '16px', width: '44px', height: '44px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              </div>
+            </div>
+
+            {/* Card 2 */}
+            <div className="flex-1 rounded-[18px] sm:rounded-[35px]" style={{ position: 'relative', overflow: 'hidden' }}>
+              <Image
+                src="/s2.webp"
+                alt="Service 2"
+                width={600}
+                height={400}
+                className="w-full h-auto"
+                style={{ display: 'block' }}
+              />
+              <div style={{
+                position: 'absolute', inset: 0,
+                background: 'linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 60%)',
+                borderRadius: '16px',
+              }} />
+              <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '16px 20px 22px 28px' }}>
+                <p style={{ color: '#fff', fontWeight: 500, fontSize: '1.32rem', lineHeight: 1.2, marginBottom: '4px', fontFamily: 'var(--font-poppins), Poppins, sans-serif' }}>
+                  Asset Management
+                </p>
+                <p style={{ color: 'rgba(255,255,255,0.85)', fontWeight: 400, fontSize: '0.75rem', lineHeight: 1.6, fontFamily: 'var(--font-poppins), Poppins, sans-serif', margin: 0, paddingRight: '56px' }}>
+                  End-to-end lifecycle management tracking
+                </p>
+              </div>
+              <div className="bg-[#41BEF0] hover:bg-[#2A9AC4] transition-colors duration-200" style={{ position: 'absolute', bottom: '18px', right: '16px', width: '44px', height: '44px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              </div>
+            </div>
+
+            {/* Card 3 */}
+            <div className="flex-1 rounded-[18px] sm:rounded-[35px]" style={{ position: 'relative', overflow: 'hidden' }}>
+              <Image
+                src="/s3.webp"
+                alt="Service 3"
+                width={600}
+                height={400}
+                className="w-full h-auto"
+                style={{ display: 'block' }}
+              />
+              <div style={{
+                position: 'absolute', inset: 0,
+                background: 'linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 60%)',
+                borderRadius: '16px',
+              }} />
+              <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '16px 20px 22px 28px' }}>
+                <p style={{ color: '#fff', fontWeight: 500, fontSize: '1.32rem', lineHeight: 1.2, marginBottom: '4px', fontFamily: 'var(--font-poppins), Poppins, sans-serif' }}>
+                  Technical Oversight
+                </p>
+                <p style={{ color: 'rgba(255,255,255,0.85)', fontWeight: 400, fontSize: '0.75rem', lineHeight: 1.6, fontFamily: 'var(--font-poppins), Poppins, sans-serif', margin: 0, paddingRight: '56px' }}>
+                  Pre-purchase inspections (PPI) and audits.
+                </p>
+              </div>
+              <div className="bg-[#41BEF0] hover:bg-[#2A9AC4] transition-colors duration-200" style={{ position: 'absolute', bottom: '18px', right: '16px', width: '44px', height: '44px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Strategy Section */}
+      <StrategySection />
     </main>
   );
 }
