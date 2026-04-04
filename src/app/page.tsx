@@ -1,4 +1,10 @@
+import { Metadata } from 'next';
 import React from 'react';
+
+export const metadata: Metadata = {
+  title: "Tacho Aviation | Technical Advisory & Asset Management",
+  description: "Bridging the gap between technical status and commercial value for the modern aircraft lessor. Based globally, with expertise in inspections and lifecycle management.",
+};
 import HeroButton from '@/components/HeroButton';
 import Image from 'next/image';
 import PreloadScreen from '../components/PreloadScreen';
