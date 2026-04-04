@@ -10,6 +10,11 @@ export default function PreloadScreen() {
   const doneRef = useRef(false);
 
   useEffect(() => {
+    if (typeof window !== 'undefined' && sessionStorage.getItem('hasVisited')) {
+      setVisible(false);
+      return;
+    }
+
     const startTs = Date.now();
     const minVisibleMs = 1200;
 
@@ -47,6 +52,7 @@ export default function PreloadScreen() {
 
         if (next >= 100 && hasWaitedLongEnough) {
           doneRef.current = true;
+          sessionStorage.setItem('hasVisited', 'true');
           window.setTimeout(() => {
             setVisible(false);
             unlockScroll();

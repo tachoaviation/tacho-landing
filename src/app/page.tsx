@@ -1,23 +1,14 @@
 import React from 'react';
-import Navbar from '@/components/Navbar';
 import HeroButton from '@/components/HeroButton';
 import Image from 'next/image';
 import PreloadScreen from '../components/PreloadScreen';
 import StrategySectionWrapper from '@/components/StrategySectionWrapper';
 import HelpWrapper from '@/components/HelpWrapper';
-import FooterWrapper from '@/components/FooterWrapper';
 
 export default function Home() {
   return (
     <main>
       <PreloadScreen />
-
-      {/* Fixed Floating Navbar */}
-      <div
-        className="px-4 sm:px-6 md:px-12 lg:px-12 fixed left-0 right-0 z-[50] top-4 md:top-[50px]"
-      >
-        <Navbar />
-      </div>
 
       {/* Hero Section */}
       <div 
@@ -34,7 +25,7 @@ export default function Home() {
           muted
           loop
           playsInline
-          preload="auto"
+          preload="metadata"
           poster="/heroimg.png"
           style={{
             position: 'absolute',
@@ -110,6 +101,7 @@ export default function Home() {
 
       {/* About Section */}
       <div
+        id="about"
         style={{
           position: 'relative',
           width: '100%',
@@ -126,6 +118,7 @@ export default function Home() {
           src="/aboutvector.webp"
           alt=""
           fill
+          sizes="100vw"
           style={{
             objectFit: 'cover',
             objectPosition: 'center',
@@ -192,6 +185,7 @@ export default function Home() {
               width={1000}
               height={700}
               className="w-full h-auto"
+              sizes="(max-width: 768px) 100vw, 50vw"
               style={{
                 borderRadius: '16px',
                 objectFit: 'cover',
@@ -222,6 +216,7 @@ export default function Home() {
           width={1400}
           height={800}
           className="top-[8%] sm:top-[10%] md:top-[12%]"
+          sizes="100vw"
           style={{
             position: 'absolute',
             left: 0,
@@ -241,6 +236,7 @@ export default function Home() {
           width={700}
           height={700}
           className="w-[65%] sm:w-[55%] md:w-[40%]"
+          sizes="(max-width: 768px) 65vw, 40vw"
           style={{
             position: 'absolute',
             bottom: 0,
@@ -290,6 +286,7 @@ export default function Home() {
                 width={600}
                 height={400}
                 className="w-full h-auto"
+                sizes="(max-width: 640px) 100vw, 33vw"
                 style={{ display: 'block' }}
               />
               <div style={{
@@ -318,6 +315,7 @@ export default function Home() {
                 width={600}
                 height={400}
                 className="w-full h-auto"
+                sizes="(max-width: 640px) 100vw, 33vw"
                 style={{ display: 'block' }}
               />
               <div style={{
@@ -346,6 +344,7 @@ export default function Home() {
                 width={600}
                 height={400}
                 className="w-full h-auto"
+                sizes="(max-width: 640px) 100vw, 33vw"
                 style={{ display: 'block' }}
               />
               <div style={{
@@ -389,6 +388,7 @@ export default function Home() {
           src="/whybg.webp"
           alt=""
           fill
+          sizes="100vw"
           style={{
             objectFit: 'cover',
             objectPosition: 'center',
@@ -403,6 +403,7 @@ export default function Home() {
           width={300}
           height={300}
           className="w-[65%] sm:w-[55%] md:w-[16%]"
+          sizes="(max-width: 768px) 65vw, 16vw"
           style={{
             position: 'absolute',
             bottom: 0,
@@ -629,7 +630,6 @@ export default function Home() {
       </div>
 
       <HelpWrapper />
-      <FooterWrapper />
     </main>
   );
 }
