@@ -8,13 +8,34 @@ export default function ContactForm() {
   const [email, setEmail] = useState('');
   const [query, setQuery] = useState('');
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formStatus, setFormStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null);
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log({ phoneCode, phoneNumber, email, query });
-    alert("Form submitted successfully!");
+    setIsSubmitting(true);
+    setFormStatus(null);
+    
+    // Save current values for the fetch
+    const payload = { phoneCode, phoneNumber, email, query };
+    
+    // Provide instant feedback to the user (Optimistic UI)
+    setFormStatus({ type: 'success', message: 'Form submitted successfully!' });
     setPhoneNumber('');
     setEmail('');
     setQuery('');
+    setIsSubmitting(false);
+    
+    // Perform the API request in the background
+    fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(payload),
+    }).catch(error => {
+      console.error('Background submission error:', error);
+    });
   };
 
   return (
@@ -132,6 +153,7 @@ export default function ContactForm() {
         <div style={{ marginTop: '4px' }}>
           <button 
             type="submit"
+            disabled={isSubmitting}
             style={{
               display: 'inline-block',
               backgroundColor: '#41BEF0',
@@ -141,22 +163,33 @@ export default function ContactForm() {
               borderRadius: '10px',
               fontSize: '14px',
               letterSpacing: '0.08em',
-              cursor: 'pointer',
+              cursor: isSubmitting ? 'not-allowed' : 'pointer',
+              opacity: isSubmitting ? 0.7 : 1,
               border: 'none',
               transition: 'background-color 0.2s ease',
               fontFamily: 'inherit'
             }}
-            onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#2A9AC4'}
-            onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#41BEF0'}
+            onMouseOver={(e) => !isSubmitting && (e.currentTarget.style.backgroundColor = '#2A9AC4')}
+            onMouseOut={(e) => !isSubmitting && (e.currentTarget.style.backgroundColor = '#41BEF0')}
           >
             <span style={{ 
               display: 'inline-block',
               transform: 'scaleY(1.2)',
               transformOrigin: 'center'
             }}>
-              Submit
+              {isSubmitting ? 'Submitting...' : 'Submit'}
             </span>
           </button>
+          
+          {formStatus && (
+            <p style={{
+              marginTop: '16px',
+              fontSize: '14px',
+              color: formStatus.type === 'success' ? '#16a34a' : '#dc2626'
+            }}>
+              {formStatus.message}
+            </p>
+          )}
         </div>
 
       </form>

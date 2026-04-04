@@ -3,9 +3,21 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Help() {
   const [isHovered, setIsHovered] = useState(false);
+  const pathname = usePathname();
+
+  const handleQuoteClick = (e: React.MouseEvent) => {
+    if (pathname === '/contact') {
+      e.preventDefault();
+      const form = document.getElementById('contact-form');
+      if (form) {
+        form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  };
 
   return (
     <section
@@ -80,7 +92,8 @@ export default function Help() {
           </p>
 
           <Link
-            href="/contact"
+            href="/contact#contact-form"
+            onClick={handleQuoteClick}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             style={{

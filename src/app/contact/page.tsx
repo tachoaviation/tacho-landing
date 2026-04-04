@@ -74,11 +74,13 @@ export default function ContactPage() {
 
       {/* Main Content Area */}
       <div 
+        id="contact-form"
         style={{
           width: '100%',
           padding: '80px 0',
           backgroundColor: 'transparent',
-          fontFamily: 'var(--font-poppins), Poppins, sans-serif'
+          fontFamily: 'var(--font-poppins), Poppins, sans-serif',
+          scrollMarginTop: '10vh'
         }}
       >
         <div 

@@ -61,7 +61,16 @@ export default function Navbar() {
 
           {/* Contact Us Button (Desktop only) */}
           <button
-            onClick={() => router.push('/contact')}
+            onClick={() => {
+              if (pathname === '/contact') {
+                const form = document.getElementById('contact-form');
+                if (form) {
+                  form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+              } else {
+                router.push('/contact#contact-form');
+              }
+            }}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             className="hidden md:block"
@@ -159,7 +168,14 @@ export default function Navbar() {
             ))}
             <button
               onClick={() => {
-                router.push('/contact');
+                if (pathname === '/contact') {
+                  const form = document.getElementById('contact-form');
+                  if (form) {
+                    form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                  }
+                } else {
+                  router.push('/contact#contact-form');
+                }
                 setIsMobileMenuOpen(false);
               }}
               style={{ 

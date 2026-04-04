@@ -91,7 +91,7 @@ export default function Home() {
               Let us handle the logistics, so you can focus on<br className="hidden lg:block" /> growing your business.
             </p>
             <div>
-              <HeroButton href="/contact">
+              <HeroButton href="/contact#contact-form">
                 Get a quote
               </HeroButton>
             </div>
