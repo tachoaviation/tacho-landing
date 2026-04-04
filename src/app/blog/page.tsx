@@ -1,4 +1,10 @@
+import { Metadata } from 'next';
 import React from 'react';
+
+export const metadata: Metadata = {
+  title: "Insights & Blog",
+  description: "Read the latest news, regulatory updates, and expert insights regarding aviation leasing, technical inspections, and asset lifecycles.",
+};
 import Image from 'next/image';
 
 export default function BlogPage() {

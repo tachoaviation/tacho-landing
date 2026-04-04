@@ -1,4 +1,10 @@
+import { Metadata } from 'next';
 import React from 'react';
+
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description: "Get in touch with Tacho Aviation experts to discuss your technical advisory, aircraft inspections, and asset management needs.",
+};
 import Image from 'next/image';
 import HelpWrapper from '@/components/HelpWrapper';
 import ContactForm from '@/components/ContactForm';

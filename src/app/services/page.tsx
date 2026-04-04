@@ -1,4 +1,10 @@
+import { Metadata } from 'next';
 import React from 'react';
+
+export const metadata: Metadata = {
+  title: "Services",
+  description: "Explore our comprehensive range of aviation management services, encompassing Leasing Support, Asset Management, and independent Technical Oversight.",
+};
 import Image from 'next/image';
 
 export default function ServicesPage() {
