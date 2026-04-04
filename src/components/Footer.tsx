@@ -14,11 +14,9 @@ const columns = [
   {
     title: 'Services',
     items: [
-      { label: 'Services 1', href: '#' },
-      { label: 'Services 2', href: '#' },
-      { label: 'Services 3', href: '#' },
-      { label: 'Services 4', href: '#' },
-      { label: 'Services 5', href: '#' },
+      { label: 'Leasing Support', href: '/services#leasing-support' },
+      { label: 'Asset Management', href: '/services#asset-management' },
+      { label: 'Technical Oversight', href: '/services#technical-oversight' },
     ],
   },
   {
@@ -77,8 +75,8 @@ export default function Footer() {
         }}
       >
         <div
-          className="grid grid-cols-1 md:grid-cols-[1.1fr_1.4fr]"
-          style={{ columnGap: '78px', rowGap: '36px' }}
+          className="grid grid-cols-1 lg:grid-cols-[0.8fr_1.6fr]"
+          style={{ columnGap: '40px', rowGap: '40px' }}
         >
           <div>
             <Link href="/" style={{ display: 'inline-flex', marginBottom: '12px' }}>
@@ -140,11 +138,11 @@ export default function Footer() {
           </div>
 
           <div
-            className="grid grid-cols-2 sm:grid-cols-4"
-            style={{ columnGap: '34px', rowGap: '20px' }}
+            className="grid grid-cols-2 md:grid-cols-4 lg:flex lg:flex-nowrap lg:justify-between"
+            style={{ gap: '32px' }}
           >
             {columns.map((col) => (
-              <div key={col.title}>
+              <div key={col.title} style={{ minWidth: '0' }}>
                 <p
                   style={{
                     color: '#41BEF0',
@@ -166,6 +164,7 @@ export default function Footer() {
                         fontWeight: 500,
                         textDecoration: 'none',
                         lineHeight: 1.5,
+                        whiteSpace: 'nowrap'
                       }}
                     >
                       {item.label}
