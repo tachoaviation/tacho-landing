@@ -65,7 +65,7 @@ export default function Navbar() {
               if (pathname === '/contact') {
                 const form = document.getElementById('contact-form');
                 if (form) {
-                  form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                  form.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
               } else {
                 router.push('/contact#contact-form');
@@ -171,7 +171,7 @@ export default function Navbar() {
                 if (pathname === '/contact') {
                   const form = document.getElementById('contact-form');
                   if (form) {
-                    form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    form.scrollIntoView({ behavior: 'smooth', block: 'start' });
                   }
                 } else {
                   router.push('/contact#contact-form');
