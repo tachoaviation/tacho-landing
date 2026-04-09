@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins, Geist_Mono, Geist } from "next/font/google";
 import "./globals.css";
-import Navbar from '@/components/Navbar';
+import NavbarWrapper from '@/components/NavbarWrapper';
 import FooterWrapper from '@/components/FooterWrapper';
 import { cn } from "@/lib/utils";
 
@@ -73,12 +73,7 @@ export default function RootLayout({
         style={{ fontFamily: 'var(--font-poppins), sans-serif' }}
         suppressHydrationWarning
       >
-        {/* Fixed Floating Navbar */}
-        <div
-          className="px-4 sm:px-6 md:px-12 lg:px-12 fixed left-0 right-0 z-[50] top-4 md:top-[50px]"
-        >
-          <Navbar />
-        </div>
+        <NavbarWrapper />
         {children}
         <FooterWrapper />
       </body>
