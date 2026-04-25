@@ -21,20 +21,37 @@ export default function Help() {
 
   return (
     <section
+      className="min-h-[35vh] md:min-h-[52vh]"
       style={{
         position: 'relative',
         width: '100%',
-        minHeight: '52vh',
         fontFamily: 'var(--font-poppins), Poppins, sans-serif',
         overflow: 'hidden',
         display: 'flex',
         alignItems: 'center',
       }}
     >
+      {/* Desktop background */}
       <Image
         src="/helpbg.webp"
         alt=""
         fill
+        priority
+        className="hidden md:block"
+        style={{
+          objectFit: 'cover',
+          objectPosition: 'center',
+          zIndex: 0,
+        }}
+      />
+
+      {/* Mobile background */}
+      <Image
+        src="/deskhelp.webp"
+        alt=""
+        fill
+        priority
+        className="block md:hidden"
         style={{
           objectFit: 'cover',
           objectPosition: 'center',
@@ -53,6 +70,7 @@ export default function Help() {
       />
 
       <div
+        className="px-5 md:px-12"
         style={{
           position: 'relative',
           zIndex: 2,
@@ -64,12 +82,12 @@ export default function Help() {
       >
         <div style={{ maxWidth: '580px' }}>
           <h2
+            className="text-[1.6rem] md:text-[clamp(2rem,3.4vw,3.08rem)]"
             style={{
               color: '#ffffff',
               fontWeight: 600,
-              fontSize: 'clamp(2rem, 3.4vw, 3.08rem)',
               lineHeight: 1.06,
-              marginBottom: '16px',
+              marginBottom: '12px',
               textShadow: '0 2px 12px rgba(0,0,0,0.2)',
               fontFamily: 'var(--font-poppins), Poppins, sans-serif',
             }}
@@ -78,13 +96,13 @@ export default function Help() {
           </h2>
 
           <p
+            className="text-[0.95rem] md:text-[clamp(1.04rem,1.2vw,1.3rem)] help-text-gap"
             style={{
               color: 'rgba(255,255,255,0.78)',
-              fontSize: 'clamp(1.04rem, 1.2vw, 1.3rem)',
               fontWeight: 200,
               lineHeight: 1.45,
               maxWidth: '640px',
-              marginBottom: '28px',
+              marginBottom: '40px',
               fontFamily: 'var(--font-poppins), Poppins, sans-serif',
             }}
           >

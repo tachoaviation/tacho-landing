@@ -26,6 +26,11 @@ export const metadata: Metadata = {
   },
   description: "Independent, conflict-free, and commercially aware technical advisory for aviation assets. We specialize in Leasing Support, Asset Management, and Technical Oversight.",
   keywords: ["Aviation Asset Management", "Aircraft Lessors", "Leasing Support", "Technical Oversight", "Pre-purchase inspections", "Aviation Technical Advisory"],
+  icons: {
+    icon: "/favicon.webp",
+    shortcut: "/favicon.webp",
+    apple: "/favicon.webp",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",

@@ -395,6 +395,7 @@ export default function Home() {
           src="/whybg.webp"
           alt=""
           fill
+          priority
           sizes="100vw"
           style={{
             objectFit: 'cover',

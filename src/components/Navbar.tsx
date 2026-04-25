@@ -27,14 +27,16 @@ export default function Navbar() {
   ];
 
   return (
-    <div style={{ maxWidth: '950px', margin: '0 auto', paddingLeft: '16px', paddingRight: '16px' }}>
-      <nav style={{ 
-        backgroundColor: '#00488C', 
-        padding: '8px 24px',
-        borderRadius: '15px',
-        boxShadow: '0 8px 24px rgba(0, 0, 0, 0.35)',
-        fontFamily: 'var(--font-poppins), Poppins, sans-serif'
-      }}>
+    <div className="navbar-container" style={{ maxWidth: '950px', margin: '0 auto', paddingLeft: '16px', paddingRight: '16px' }}>
+      <nav
+        className="navbar-nav"
+        style={{
+          backgroundColor: '#00488C',
+          padding: '8px 24px',
+          borderRadius: '15px',
+          boxShadow: '0 8px 24px rgba(0, 0, 0, 0.35)',
+          fontFamily: 'var(--font-poppins), Poppins, sans-serif'
+        }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           {/* Logo */}
           <Link href="/" style={{ display: 'flex', alignItems: 'center' }}>

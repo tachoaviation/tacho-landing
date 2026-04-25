@@ -154,3 +154,20 @@ body {
     @apply font-sans;
   }
 }
+
+/* Desktop-only navbar sizing (md = 768px+) */
+@media (min-width: 768px) {
+  .navbar-container {
+    max-width: 1040px !important;
+  }
+  .navbar-nav {
+    padding: 5px 24px !important;
+  }
+}
+
+/* Help section — extra gap before button on mobile */
+@media (max-width: 767px) {
+  .help-text-gap {
+    margin-bottom: 64px !important;
+  }
+}

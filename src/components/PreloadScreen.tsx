@@ -110,7 +110,7 @@ export default function PreloadScreen() {
           alt="Tacho"
           width={170}
           height={50}
-          style={{ margin: '0 auto 22px', width: '170px', height: 'auto' }}
+          style={{ margin: '0 auto 22px', width: '170px', height: 'auto', display: 'block' }}
           priority
         />
 

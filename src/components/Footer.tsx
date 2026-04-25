@@ -71,7 +71,7 @@ export default function Footer() {
           zIndex: 2,
           maxWidth: '1150px',
           margin: '0 auto',
-          padding: '68px 48px 150px',
+          padding: '48px 20px 120px',
         }}
       >
         <div
@@ -90,9 +90,9 @@ export default function Footer() {
             </Link>
 
             <p
+              className="text-[0.78rem] md:text-[0.95rem]"
               style={{
                 color: 'rgba(255,255,255,0.3)',
-                fontSize: '0.95rem',
                 lineHeight: 1.45,
                 marginBottom: '24px',
                 fontWeight: 400,
@@ -106,14 +106,14 @@ export default function Footer() {
             <div style={{ display: 'grid', rowGap: '10px' }}>
               <a
                 href="tel:987654321"
+                className="text-[0.82rem] md:text-[1.04rem]"
                 style={{
                   color: '#ffffff',
                   textDecoration: 'none',
-                  fontSize: '1.04rem',
                   fontWeight: 500,
                   display: 'inline-flex',
                   alignItems: 'center',
-                  gap: '10px',
+                  gap: '8px',
                 }}
               >
                 <span aria-hidden="true">{'☎'}</span>
@@ -121,14 +121,15 @@ export default function Footer() {
               </a>
               <a
                 href="mailto:info@tachoaviation.com"
+                className="text-[0.82rem] md:text-[1.04rem]"
                 style={{
                   color: '#ffffff',
                   textDecoration: 'none',
-                  fontSize: '1.04rem',
                   fontWeight: 500,
                   display: 'inline-flex',
                   alignItems: 'center',
-                  gap: '10px',
+                  gap: '8px',
+                  wordBreak: 'break-all',
                 }}
               >
                 <span aria-hidden="true">{'✉'}</span>
@@ -142,11 +143,11 @@ export default function Footer() {
             style={{ gap: '32px' }}
           >
             {columns.map((col) => (
-              <div key={col.title} style={{ minWidth: '0' }}>
+              <div key={col.title} style={{ minWidth: '0', overflow: 'hidden' }}>
                 <p
+                  className="text-[0.8rem] md:text-[1.02rem]"
                   style={{
                     color: '#41BEF0',
-                    fontSize: '1.02rem',
                     fontWeight: 500,
                     marginBottom: '8px',
                   }}
@@ -158,13 +159,14 @@ export default function Footer() {
                     <Link
                       key={item.label}
                       href={item.href}
+                      className="text-[0.82rem] md:text-[1.03rem]"
                       style={{
                         color: '#ffffff',
-                        fontSize: '1.03rem',
                         fontWeight: 500,
                         textDecoration: 'none',
                         lineHeight: 1.5,
-                        whiteSpace: 'nowrap'
+                        wordBreak: 'break-word',
+                        overflowWrap: 'break-word',
                       }}
                     >
                       {item.label}
