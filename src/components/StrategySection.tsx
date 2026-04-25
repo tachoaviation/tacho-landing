@@ -168,27 +168,6 @@ export default function StrategySection() {
                 <p style={{ fontSize: '0.78rem', color: '#444', lineHeight: 1.6, marginBottom: '14px', fontFamily: 'var(--font-poppins), Poppins, sans-serif' }}>
                   {item.description}
                 </p>
-                <button
-                  className="bg-[#41BEF0] hover:bg-[#2A9AC4] transition-colors duration-200"
-                  style={{
-                    color: '#fff',
-                    border: 'none',
-                    borderRadius: '8px',
-                    padding: '10px 18px',
-                    fontSize: '0.72rem',
-                    fontWeight: 600,
-                    letterSpacing: '0.06em',
-                    cursor: 'pointer',
-                    whiteSpace: 'nowrap',
-                    fontFamily: 'var(--font-poppins), Poppins, sans-serif',
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '6px',
-                  }}
-                >
-                  LEARN MORE
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                </button>
               </div>
             ))}
           </div>
@@ -378,9 +357,7 @@ export default function StrategySection() {
                         <Image src={item.image} alt={item.title} fill style={{ objectFit: 'contain' }} />
                       </div>
 
-                      {/* Bottom row */}
-                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', gap: '16px' }}>
-                        <div>
+                      <div>
                           <p style={{ fontSize: '1.15rem', fontWeight: 600, color: '#111', marginBottom: '8px', fontFamily: 'var(--font-poppins), Poppins, sans-serif' }}>
                             {item.title}
                           </p>
@@ -388,29 +365,6 @@ export default function StrategySection() {
                             {item.description}
                           </p>
                         </div>
-                        <button
-                          className="bg-[#41BEF0] hover:bg-[#2A9AC4] transition-colors duration-200"
-                          style={{
-                            flexShrink: 0,
-                            color: '#fff',
-                            border: 'none',
-                            borderRadius: '8px',
-                            padding: '10px 18px',
-                            fontSize: '0.72rem',
-                            fontWeight: 600,
-                            letterSpacing: '0.06em',
-                            cursor: 'pointer',
-                            whiteSpace: 'nowrap',
-                            fontFamily: 'var(--font-poppins), Poppins, sans-serif',
-                            display: 'inline-flex',
-                            alignItems: 'center',
-                            gap: '6px',
-                          }}
-                        >
-                          LEARN MORE
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                        </button>
-                      </div>
                     </div>
                   );
                 })}

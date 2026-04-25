@@ -410,7 +410,7 @@ export default function Home() {
           alt=""
           width={300}
           height={300}
-          className="w-[65%] sm:w-[55%] md:w-[16%]"
+          className="hidden md:block w-[65%] sm:w-[55%] md:w-[16%]"
           sizes="(max-width: 768px) 65vw, 16vw"
           style={{
             position: 'absolute',
@@ -436,7 +436,7 @@ export default function Home() {
         >
           <div style={{ paddingTop: '6px', marginBottom: '56px' }}>
             <h2
-              className="text-[1.75rem] sm:text-[2.2rem] md:text-[2.9rem]"
+              className="text-[1.75rem] sm:text-[2.2rem] md:text-[2.9rem] why-section-heading"
               style={{
                 color: '#ffffff',
                 fontWeight: 600,
@@ -452,6 +452,7 @@ export default function Home() {
               Why Tacho<br />Aviation?
             </h2>
             <p
+              className="why-section-subtitle"
               style={{
                 color: 'rgba(255,255,255,0.78)',
                 fontSize: '0.98rem',
@@ -468,7 +469,7 @@ export default function Home() {
           </div>
 
           <div
-            className="grid grid-cols-1 md:grid-cols-3"
+            className="grid grid-cols-1 md:grid-cols-3 why-cards-grid"
             style={{
               columnGap: '70px',
               rowGap: '52px',
@@ -476,9 +477,10 @@ export default function Home() {
           >
             <div className="hidden md:block" aria-hidden="true" />
 
-            <div>
+            <div className="why-card-left">
               <div style={{ display: 'flex', alignItems: 'stretch', gap: '15px', marginBottom: '26px' }}>
                 <span
+                  className="why-card-bar"
                   style={{
                     width: '8px',
                     height: 'auto',
@@ -489,6 +491,7 @@ export default function Home() {
                   }}
                 />
                 <h3
+                  className="why-card-heading"
                   style={{
                     color: '#ffffff',
                     fontSize: 'clamp(1.5rem, 2.6vw, 2rem)',
@@ -502,6 +505,7 @@ export default function Home() {
                 </h3>
               </div>
               <p
+                className="why-card-body"
                 style={{
                   color: 'rgba(255,255,255,0.78)',
                   fontSize: '0.84rem',
@@ -515,9 +519,10 @@ export default function Home() {
               </p>
             </div>
 
-            <div>
+            <div className="why-card-right">
               <div style={{ display: 'flex', alignItems: 'stretch', gap: '15px', marginBottom: '26px' }}>
                 <span
+                  className="why-card-bar"
                   style={{
                     width: '8px',
                     height: 'auto',
@@ -528,6 +533,7 @@ export default function Home() {
                   }}
                 />
                 <h3
+                  className="why-card-heading"
                   style={{
                     color: '#ffffff',
                     fontSize: 'clamp(1.5rem, 2.6vw, 2rem)',
@@ -541,6 +547,7 @@ export default function Home() {
                 </h3>
               </div>
               <p
+                className="why-card-body"
                 style={{
                   color: 'rgba(255,255,255,0.78)',
                   fontSize: '0.84rem',
@@ -554,9 +561,10 @@ export default function Home() {
               </p>
             </div>
 
-            <div>
+            <div className="why-card-left">
               <div style={{ display: 'flex', alignItems: 'stretch', gap: '15px', marginBottom: '26px' }}>
                 <span
+                  className="why-card-bar"
                   style={{
                     width: '8px',
                     height: 'auto',
@@ -567,6 +575,7 @@ export default function Home() {
                   }}
                 />
                 <h3
+                  className="why-card-heading"
                   style={{
                     color: '#ffffff',
                     fontSize: 'clamp(1.5rem, 2.6vw, 2rem)',
@@ -580,6 +589,7 @@ export default function Home() {
                 </h3>
               </div>
               <p
+                className="why-card-body"
                 style={{
                   color: 'rgba(255,255,255,0.78)',
                   fontSize: '0.84rem',
@@ -593,9 +603,10 @@ export default function Home() {
               </p>
             </div>
 
-            <div>
+            <div className="why-card-right">
               <div style={{ display: 'flex', alignItems: 'stretch', gap: '15px', marginBottom: '26px' }}>
                 <span
+                  className="why-card-bar"
                   style={{
                     width: '8px',
                     height: 'auto',
@@ -606,6 +617,7 @@ export default function Home() {
                   }}
                 />
                 <h3
+                  className="why-card-heading"
                   style={{
                     color: '#ffffff',
                     fontSize: 'clamp(1.5rem, 2.6vw, 2rem)',
@@ -619,6 +631,7 @@ export default function Home() {
                 </h3>
               </div>
               <p
+                className="why-card-body"
                 style={{
                   color: 'rgba(255,255,255,0.78)',
                   fontSize: '0.84rem',

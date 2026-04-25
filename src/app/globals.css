@@ -171,3 +171,63 @@ body {
     margin-bottom: 64px !important;
   }
 }
+
+/* Why Tacho Aviation — mobile overrides */
+@media (max-width: 767px) {
+  /* Main heading + subtitle */
+  .why-section-heading {
+    color: #0d1b2a !important;
+    text-shadow: none !important;
+  }
+  .why-section-subtitle {
+    color: #1a2b3c !important;
+    line-height: 1.4 !important;
+  }
+
+  /* Cards grid → vertical flex for staggered layout */
+  .why-cards-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 36px !important;
+  }
+
+  /* Card width = 68% so they don't span full width */
+  .why-card-left,
+  .why-card-right {
+    width: 68% !important;
+    min-width: 0;
+  }
+
+  /* Odd cards → left-aligned */
+  .why-card-left {
+    align-self: flex-start !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
+
+  /* Even cards → right-aligned */
+  .why-card-right {
+    align-self: flex-end !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+  }
+
+  /* Card heading (h3) — dark text, tighter size, slightly bolder */
+  .why-card-heading {
+    color: #0d1b2a !important;
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+    text-shadow: none !important;
+  }
+
+  /* Card body paragraph — dark, tight line-height */
+  .why-card-body {
+    color: #1a2b3c !important;
+    line-height: 1.38 !important;
+  }
+
+  /* Blue pill bar — keep it the same */
+  .why-card-bar {
+    background-color: #274AAB !important;
+  }
+}
