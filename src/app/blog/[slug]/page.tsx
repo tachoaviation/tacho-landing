@@ -77,7 +77,7 @@ export default async function BlogPostPage({ params }: Props) {
           style={{
             position: 'relative',
             width: '100%',
-            height: 'clamp(280px, 45vw, 520px)',
+            height: '50vh',
             overflow: 'hidden',
           }}
         >
