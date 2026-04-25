@@ -6,26 +6,26 @@ import Image from 'next/image';
 const items = [
   {
     number: '01',
-    title: 'Lessor-Aligned Management',
-    description:
-      "Technical decision-making that is commercially aware and fully aligned with the lessor's interests.",
-    image: '/a1.webp',
-    bg: '#D2F0FC',
-  },
-  {
-    number: '02',
-    title: 'Technical Oversight',
-    description:
-      'Precision-led monitoring of performance and limits to prevent value erosion during operations.',
-    image: '/a2.webp',
-    bg: '#83B5E2',
-  },
-  {
-    number: '03',
     title: 'Value Protection',
     description:
       'Lifecycle-focused strategies to protect the most expensive components including engines and landing gear.',
     image: '/a3.webp',
+    bg: '#D2F0FC',
+  },
+  {
+    number: '02',
+    title: 'Lessor-Aligned Management',
+    description:
+      "Technical decision-making that is commercially aware and fully aligned with the lessor's interests.",
+    image: '/a1.webp',
+    bg: '#83B5E2',
+  },
+  {
+    number: '03',
+    title: 'Technical Oversight',
+    description:
+      'Precision-led monitoring of performance and limits to prevent value erosion during operations.',
+    image: '/a2.webp',
     bg: '#D2F0FC',
   },
 ];
@@ -88,7 +88,7 @@ export default function StrategySection() {
           width: '100%',
           backgroundColor: '#F2F6F9',
           fontFamily: 'var(--font-poppins), Poppins, sans-serif',
-          padding: '60px 20px 72px',
+          padding: '60px 0 72px',
         }}
       >
         {/* Background vector */}
@@ -108,7 +108,8 @@ export default function StrategySection() {
           }}
         />
 
-        <div style={{ position: 'relative', zIndex: 1 }}>
+        {/* Content container — matches home page content width */}
+        <div style={{ position: 'relative', zIndex: 1, maxWidth: '1300px', margin: '0 auto', padding: '0 48px' }}>
           {/* Section title */}
           <h2
             style={{

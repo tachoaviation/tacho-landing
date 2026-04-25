@@ -2,13 +2,22 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const columns = [
+interface BlogPost {
+  title: string;
+  slug: string;
+}
+
+interface FooterProps {
+  blogPosts?: BlogPost[];
+}
+
+const staticColumns = [
   {
     title: 'About Us',
     items: [
-      { label: 'partners', href: '#' },
-      { label: 'FAQ', href: '#' },
-      { label: 'Contact', href: '/contact' },
+      { label: 'Partners', href: '#', hidden: true },
+      { label: 'FAQ', href: '/contact#contact-form' },
+      { label: 'Contact', href: '/contact#contact-form' },
     ],
   },
   {
@@ -20,25 +29,30 @@ const columns = [
     ],
   },
   {
-    title: 'Blog',
-    items: [
-      { label: 'Article 1', href: '#' },
-      { label: 'Article 2', href: '#' },
-      { label: 'Article 3', href: '#' },
-      { label: 'Article 4', href: '#' },
-      { label: 'Article 5', href: '#' },
-    ],
-  },
-  {
     title: 'Socials',
     items: [
       { label: 'LinkedIn', href: '#' },
-      { label: 'Social 2', href: '#' },
     ],
   },
 ];
 
-export default function Footer() {
+export default function Footer({ blogPosts = [] }: FooterProps) {
+  // Build columns: inject Blog column between Services and Socials if posts exist
+  const blogColumn = blogPosts.length > 0
+    ? [{
+        title: 'Blog',
+        titleHref: '/blog#listings',
+        items: blogPosts.map(p => ({ label: p.title, href: `/blog/${p.slug}` })),
+      }]
+    : [];
+
+  const columns = [
+    staticColumns[0], // About Us
+    staticColumns[1], // Services
+    ...blogColumn,
+    staticColumns[2], // Socials
+  ];
+
   return (
     <footer
       style={{
@@ -69,7 +83,7 @@ export default function Footer() {
         style={{
           position: 'relative',
           zIndex: 2,
-          maxWidth: '1150px',
+          maxWidth: '1300px',
           margin: '0 auto',
           padding: '48px 20px 120px',
         }}
@@ -144,18 +158,34 @@ export default function Footer() {
           >
             {columns.map((col) => (
               <div key={col.title} style={{ minWidth: '0', overflow: 'hidden' }}>
-                <p
-                  className="text-[0.8rem] md:text-[1.02rem]"
-                  style={{
-                    color: '#41BEF0',
-                    fontWeight: 500,
-                    marginBottom: '8px',
-                  }}
-                >
-                  {col.title}
-                </p>
+                {'titleHref' in col && col.titleHref ? (
+                  <Link
+                    href={col.titleHref}
+                    className="text-[0.8rem] md:text-[1.02rem]"
+                    style={{
+                      color: '#41BEF0',
+                      fontWeight: 500,
+                      marginBottom: '8px',
+                      display: 'block',
+                      textDecoration: 'none',
+                    }}
+                  >
+                    {col.title}
+                  </Link>
+                ) : (
+                  <p
+                    className="text-[0.8rem] md:text-[1.02rem]"
+                    style={{
+                      color: '#41BEF0',
+                      fontWeight: 500,
+                      marginBottom: '8px',
+                    }}
+                  >
+                    {col.title}
+                  </p>
+                )}
                 <div style={{ display: 'grid', rowGap: '6px' }}>
-                  {col.items.map((item) => (
+                  {col.items.filter(item => !('hidden' in item && item.hidden)).map((item) => (
                     <Link
                       key={item.label}
                       href={item.href}

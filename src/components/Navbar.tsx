@@ -27,7 +27,7 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="navbar-container" style={{ maxWidth: '950px', margin: '0 auto', paddingLeft: '16px', paddingRight: '16px' }}>
+    <div className="navbar-container" style={{ width: '100%', maxWidth: '1198px', margin: '0 auto' }}>
       <nav
         className="navbar-nav"
         style={{

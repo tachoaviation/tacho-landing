@@ -97,21 +97,23 @@ export default async function BlogPage({ searchParams }: Props) {
 
       {/* ── Blog listing ── */}
       <div
+        id="listings"
         style={{
-          maxWidth: '1200px',
+          maxWidth: '1300px',
           margin: '0 auto',
-          padding: '72px 24px 96px',
+          padding: '72px 48px 96px',
           fontFamily: 'var(--font-poppins), Poppins, sans-serif',
         }}
       >
         {/* Section heading */}
         <h2
+          className="text-[1.75rem] sm:text-[2.2rem] md:text-[2.9rem]"
           style={{
             color: '#00488C',
-            fontSize: 'clamp(1.8rem, 3vw, 2.4rem)',
-            fontWeight: 700,
+            fontWeight: 600,
             marginBottom: '8px',
-            lineHeight: 1.1,
+            lineHeight: 1.10,
+            fontFamily: 'var(--font-poppins), Poppins, sans-serif',
           }}
         >
           Blogs

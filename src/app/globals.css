@@ -158,10 +158,18 @@ body {
 /* Desktop-only navbar sizing (md = 768px+) */
 @media (min-width: 768px) {
   .navbar-container {
-    max-width: 1040px !important;
+    max-width: 1198px !important;
   }
   .navbar-nav {
     padding: 5px 24px !important;
+  }
+}
+
+/* Mobile — restore original container padding so pill width is unchanged */
+@media (max-width: 767px) {
+  .navbar-container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
   }
 }
 

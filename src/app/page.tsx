@@ -56,23 +56,21 @@ export default function Home() {
           zIndex: 1
         }} />
 
-        {/* Hero Content - Positioned lower, aligned with navbar */}
+        {/* Hero Content - left-aligned to match About section */}
         <div style={{ 
           position: 'relative',
           zIndex: 10,
           height: '100%',
           display: 'flex',
           alignItems: 'center',
-          justifyContent: 'center',
-          paddingTop: '260px'
+          paddingTop: '260px',
         }}>
           <div
-            className="lg:-translate-x-20"
             style={{ 
               width: '100%',
-              maxWidth: '950px',
-              paddingLeft: '24px',
-              paddingRight: '24px',
+              maxWidth: '1300px',
+              margin: '0 auto',
+              padding: '0 48px',
               fontFamily: 'var(--font-poppins), Poppins, sans-serif',
             }}
           >

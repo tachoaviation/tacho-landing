@@ -1,11 +1,9 @@
-"use client";
-import dynamic from "next/dynamic";
+import { getPublishedPosts } from '@/lib/notion';
+import FooterClientWrapper from '@/components/FooterClientWrapper';
 
-const Footer = dynamic(() => import("@/components/Footer"), {
-  ssr: false,
-  loading: () => <div style={{ minHeight: '360px', backgroundColor: '#00488C' }} />,
-});
+export default async function FooterWrapper() {
+  const allPosts = await getPublishedPosts();
+  const blogPosts = allPosts.slice(0, 3).map(p => ({ title: p.title, slug: p.slug }));
 
-export default function FooterWrapper() {
-  return <Footer />;
+  return <FooterClientWrapper blogPosts={blogPosts} />;
 }

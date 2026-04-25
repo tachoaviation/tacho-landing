@@ -31,7 +31,7 @@ export default function NavbarWrapper() {
 
   return (
     <div
-      className="px-4 sm:px-6 md:px-12 lg:px-12 fixed left-0 right-0 z-[50] top-4 md:top-[50px]"
+      className="px-4 md:px-12 fixed left-0 right-0 z-[50] top-4 md:top-[50px]"
       style={{
         transform: hidden ? 'translateY(-200%)' : 'translateY(0)',
         transition: 'transform 0.35s cubic-bezier(0.4, 0, 0.2, 1)',

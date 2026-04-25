@@ -154,9 +154,9 @@ export default async function BlogPostPage({ params }: Props) {
       {/* ── Content ── */}
       <div
         style={{
-          maxWidth: '760px',
+          maxWidth: '1300px',
           margin: '0 auto',
-          padding: '56px 24px 100px',
+          padding: '56px 48px 100px',
           fontFamily: 'var(--font-poppins), Poppins, sans-serif',
         }}
       >
