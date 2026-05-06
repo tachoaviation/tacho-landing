@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, useCallback } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const items = [
   {
@@ -11,6 +12,7 @@ const items = [
       'Lifecycle-focused strategies to protect the most expensive components including engines and landing gear.',
     image: '/a3.webp',
     bg: '#D2F0FC',
+    id: 'value-protection',
   },
   {
     number: '02',
@@ -19,6 +21,7 @@ const items = [
       "Technical decision-making that is commercially aware and fully aligned with the lessor's interests.",
     image: '/a1.webp',
     bg: '#83B5E2',
+    id: 'lessor-aligned-management',
   },
   {
     number: '03',
@@ -27,6 +30,7 @@ const items = [
       'Precision-led monitoring of performance and limits to prevent value erosion during operations.',
     image: '/a2.webp',
     bg: '#D2F0FC',
+    id: 'technical-oversight',
   },
 ];
 
@@ -163,12 +167,20 @@ export default function StrategySection() {
                 </div>
 
                 {/* Content */}
-                <p style={{ fontSize: '1rem', fontWeight: 600, color: '#111', marginBottom: '6px', fontFamily: 'var(--font-poppins), Poppins, sans-serif' }}>
+                <p style={{ fontSize: '1.5rem', fontWeight: 600, color: '#111', marginBottom: '12px', fontFamily: 'var(--font-poppins), Poppins, sans-serif' }}>
                   {item.title}
                 </p>
-                <p style={{ fontSize: '0.78rem', color: '#444', lineHeight: 1.6, marginBottom: '14px', fontFamily: 'var(--font-poppins), Poppins, sans-serif' }}>
-                  {item.description}
-                </p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                  <p style={{ fontSize: '0.9rem', color: '#545352', lineHeight: 1.6, fontFamily: 'var(--font-poppins), Poppins, sans-serif', margin: 0 }}>
+                    {item.description}
+                  </p>
+                  <Link href={`/approach#${item.id}`} className="hover:bg-[#2A9AC4] transition-colors" style={{ alignSelf: 'flex-start', display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '0.75rem', fontWeight: 600, color: '#ffffff', backgroundColor: '#41BEF0', textDecoration: 'none', padding: '10px 20px', borderRadius: '8px', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+                    Learn More 
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" style={{ marginTop: '-1px' }}>
+                      <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </Link>
+                </div>
               </div>
             ))}
           </div>
@@ -359,12 +371,20 @@ export default function StrategySection() {
                       </div>
 
                       <div>
-                          <p style={{ fontSize: '1.15rem', fontWeight: 600, color: '#111', marginBottom: '8px', fontFamily: 'var(--font-poppins), Poppins, sans-serif' }}>
+                          <p style={{ fontSize: '2rem', fontWeight: 600, color: '#111', marginBottom: '12px', fontFamily: 'var(--font-poppins), Poppins, sans-serif', letterSpacing: '-0.01em' }}>
                             {item.title}
                           </p>
-                          <p style={{ fontSize: '0.8rem', color: '#444', lineHeight: 1.6, maxWidth: '300px', fontFamily: 'var(--font-poppins), Poppins, sans-serif' }}>
-                            {item.description}
-                          </p>
+                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', gap: '20px' }}>
+                            <p style={{ fontSize: '1.05rem', color: '#545352', lineHeight: 1.6, maxWidth: '380px', fontFamily: 'var(--font-poppins), Poppins, sans-serif', margin: 0 }}>
+                              {item.description}
+                            </p>
+                            <Link href={`/approach#${item.id}`} className="hover:bg-[#2A9AC4] transition-colors" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '0.75rem', fontWeight: 600, color: '#ffffff', backgroundColor: '#41BEF0', textDecoration: 'none', padding: '10px 20px', borderRadius: '8px', letterSpacing: '0.05em', textTransform: 'uppercase', flexShrink: 0 }}>
+                              Learn More 
+                              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" style={{ marginTop: '-1px' }}>
+                                <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                              </svg>
+                            </Link>
+                          </div>
                         </div>
                     </div>
                   );
