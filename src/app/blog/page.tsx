@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getPublishedPosts, POSTS_PER_PAGE } from '@/lib/notion';
+import HelpWrapper from '@/components/HelpWrapper';
 
 export const metadata: Metadata = {
   title: 'Insights & Blog',
@@ -297,6 +298,7 @@ export default async function BlogPage({ searchParams }: Props) {
           </div>
         )}
       </div>
+      <HelpWrapper />
     </main>
   );
 }

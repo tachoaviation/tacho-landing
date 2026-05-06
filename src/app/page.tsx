@@ -284,7 +284,7 @@ export default function Home() {
           {/* Images row */}
           <div className="flex flex-col sm:flex-row gap-5 sm:gap-7 md:gap-9">
             {/* Card 1 */}
-            <Link href="/services#leasing-support" className="flex-1 rounded-[18px] sm:rounded-[28px]" style={{ position: 'relative', overflow: 'hidden', display: 'block' }}>
+            <Link href="/services#leasing-support" className="group flex-1 rounded-[18px] sm:rounded-[28px] hover:scale-[1.02] transition-transform duration-300" style={{ position: 'relative', overflow: 'hidden', display: 'block' }}>
               <Image
                 src="/s1.webp"
                 alt="Leasing Support"
@@ -307,13 +307,13 @@ export default function Home() {
                   Operating lease placement and transition
                 </p>
               </div>
-              <div className="bg-[#41BEF0] hover:bg-[#2A9AC4] transition-colors duration-200" style={{ position: 'absolute', bottom: '14px', right: '14px', width: '38px', height: '38px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <div className="bg-[#41BEF0] group-hover:bg-[#00488C] hover:bg-[#00488C] transition-colors duration-200" style={{ position: 'absolute', bottom: '14px', right: '14px', width: '38px', height: '38px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
               </div>
             </Link>
 
             {/* Card 2 */}
-            <Link href="/services#asset-management" className="flex-1 rounded-[18px] sm:rounded-[28px]" style={{ position: 'relative', overflow: 'hidden', display: 'block' }}>
+            <Link href="/services#asset-management" className="group flex-1 rounded-[18px] sm:rounded-[28px] hover:scale-[1.02] transition-transform duration-300" style={{ position: 'relative', overflow: 'hidden', display: 'block' }}>
               <Image
                 src="/s2.webp"
                 alt="Service 2"
@@ -336,13 +336,13 @@ export default function Home() {
                   End-to-end lifecycle management tracking
                 </p>
               </div>
-              <div className="bg-[#41BEF0] hover:bg-[#2A9AC4] transition-colors duration-200" style={{ position: 'absolute', bottom: '14px', right: '14px', width: '38px', height: '38px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <div className="bg-[#41BEF0] group-hover:bg-[#00488C] hover:bg-[#00488C] transition-colors duration-200" style={{ position: 'absolute', bottom: '14px', right: '14px', width: '38px', height: '38px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
               </div>
             </Link>
 
             {/* Card 3 */}
-            <Link href="/services#technical-oversight" className="flex-1 rounded-[18px] sm:rounded-[28px]" style={{ position: 'relative', overflow: 'hidden', display: 'block' }}>
+            <Link href="/services#technical-oversight" className="group flex-1 rounded-[18px] sm:rounded-[28px] hover:scale-[1.02] transition-transform duration-300" style={{ position: 'relative', overflow: 'hidden', display: 'block' }}>
               <Image
                 src="/s3.webp"
                 alt="Service 3"
@@ -365,7 +365,7 @@ export default function Home() {
                   Pre-purchase inspections (PPI) and audits.
                 </p>
               </div>
-              <div className="bg-[#41BEF0] hover:bg-[#2A9AC4] transition-colors duration-200" style={{ position: 'absolute', bottom: '14px', right: '14px', width: '38px', height: '38px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <div className="bg-[#41BEF0] group-hover:bg-[#00488C] hover:bg-[#00488C] transition-colors duration-200" style={{ position: 'absolute', bottom: '14px', right: '14px', width: '38px', height: '38px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
               </div>
             </Link>

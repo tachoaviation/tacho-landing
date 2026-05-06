@@ -9,6 +9,7 @@ import Image from 'next/image';
 import TechnicalCapabilities from '@/components/TechnicalCapabilities';
 import AssetManagementCapabilities from '@/components/AssetManagementCapabilities';
 import LeasingSupportCapabilities from '@/components/LeasingSupportCapabilities';
+import HelpWrapper from '@/components/HelpWrapper';
 
 export default function ServicesPage() {
   return (
@@ -223,6 +224,7 @@ export default function ServicesPage() {
 
         </div>
       </section>
+      <HelpWrapper />
     </main>
   );
 }
