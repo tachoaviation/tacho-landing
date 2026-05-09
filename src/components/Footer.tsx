@@ -119,7 +119,7 @@ export default function Footer({ blogPosts = [] }: FooterProps) {
 
             <div style={{ display: 'grid', rowGap: '10px' }}>
               <a
-                href="tel:987654321"
+                href="tel:9645000747"
                 className="text-[0.82rem] md:text-[1.04rem]"
                 style={{
                   color: '#ffffff',
@@ -131,7 +131,7 @@ export default function Footer({ blogPosts = [] }: FooterProps) {
                 }}
               >
                 <span aria-hidden="true">{'☎'}</span>
-                987654321
+                9645000747
               </a>
               <a
                 href="mailto:info@tachoaviation.com"
