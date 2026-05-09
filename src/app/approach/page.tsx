@@ -82,7 +82,7 @@ export default function ApproachPage() {
         {/* Section: Value Protection */}
         <section id="value-protection" className="flex flex-col lg:flex-row items-stretch justify-between gap-12 lg:gap-16" style={{ marginBottom: '120px', scrollMarginTop: '120px' }}>
           <div className="w-full lg:w-[46%]">
-            <p style={{ color: '#00488C', fontSize: '0.85rem', fontWeight: 700, letterSpacing: '0.05em', marginBottom: '16px', fontFamily: 'var(--font-geist-mono), monospace', textTransform: 'uppercase' }}>
+            <p style={{ color: '#00488C', fontSize: '0.85rem', fontWeight: 700, letterSpacing: '0.05em', marginBottom: '16px', fontFamily: 'var(--font-geist-mono), monospace' }}>
               01 - Approach
             </p>
             <h2 style={{ fontSize: 'clamp(2.2rem, 3.5vw, 3.2rem)', color: '#111', fontWeight: 600, marginBottom: '24px', letterSpacing: '-0.01em', lineHeight: 1.1 }}>
@@ -93,7 +93,7 @@ export default function ApproachPage() {
             </p>
 
             <div style={{ marginTop: '40px' }}>
-              <h3 style={{ color: '#00488C', fontSize: '0.9rem', fontWeight: 700, letterSpacing: '0.05em', marginBottom: '24px' }}>Processes & Methodologies</h3>
+              <h3 style={{ color: '#00488C', fontSize: '0.9rem', fontWeight: 700, letterSpacing: '0.05em', marginBottom: '24px', fontFamily: 'var(--font-geist-mono), monospace' }}>Processes & Methodologies</h3>
               <ul style={{ position: 'relative', listStyle: 'none', paddingLeft: '0', display: 'flex', flexDirection: 'column', gap: '24px', margin: 0 }}>
                 <div style={{ position: 'absolute', left: '5px', top: '8px', bottom: '12px', width: '1.5px', backgroundColor: '#00488C' }} />
                 {[
@@ -120,7 +120,7 @@ export default function ApproachPage() {
                 <path d="M9 12l2 2 4-4" stroke="#00488C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
               <div>
-                <h4 style={{ color: '#00488C', fontSize: '0.95rem', fontWeight: 600, marginBottom: '6px' }}>Outcome</h4>
+                <h4 style={{ color: '#00488C', fontSize: '0.95rem', fontWeight: 600, marginBottom: '6px', fontFamily: 'var(--font-geist-mono), monospace' }}>Outcome</h4>
                 <p style={{ color: '#111', fontSize: '0.85rem', lineHeight: '1.6' }}>
                   Optimized asset value with reduced financial exposure across the lifecycle.
                 </p>
@@ -135,7 +135,7 @@ export default function ApproachPage() {
         {/* Section: Lessor-Aligned Management */}
         <section id="lessor-aligned-management" className="flex flex-col lg:flex-row-reverse items-stretch justify-between gap-12 lg:gap-16" style={{ marginBottom: '120px', scrollMarginTop: '120px' }}>
           <div className="w-full lg:w-[46%]">
-            <p style={{ color: '#00488C', fontSize: '0.85rem', fontWeight: 700, letterSpacing: '0.05em', marginBottom: '16px', fontFamily: 'var(--font-geist-mono), monospace', textTransform: 'uppercase' }}>
+            <p style={{ color: '#00488C', fontSize: '0.85rem', fontWeight: 700, letterSpacing: '0.05em', marginBottom: '16px', fontFamily: 'var(--font-geist-mono), monospace' }}>
               02 - Approach
             </p>
             <h2 style={{ fontSize: 'clamp(2.2rem, 3.5vw, 3.2rem)', color: '#111', fontWeight: 600, marginBottom: '24px', letterSpacing: '-0.01em', lineHeight: 1.1 }}>
@@ -146,7 +146,7 @@ export default function ApproachPage() {
             </p>
 
             <div style={{ marginTop: '40px' }}>
-              <h3 style={{ color: '#00488C', fontSize: '0.9rem', fontWeight: 700, letterSpacing: '0.05em', marginBottom: '24px' }}>Processes & Methodologies</h3>
+              <h3 style={{ color: '#00488C', fontSize: '0.9rem', fontWeight: 700, letterSpacing: '0.05em', marginBottom: '24px', fontFamily: 'var(--font-geist-mono), monospace' }}>Processes & Methodologies</h3>
               <ul style={{ position: 'relative', listStyle: 'none', paddingLeft: '0', display: 'flex', flexDirection: 'column', gap: '24px', margin: 0 }}>
                 <div style={{ position: 'absolute', left: '5px', top: '8px', bottom: '12px', width: '1.5px', backgroundColor: '#00488C' }} />
                 {[
@@ -172,7 +172,7 @@ export default function ApproachPage() {
                 <path d="M9 12l2 2 4-4" stroke="#00488C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
               <div>
-                <h4 style={{ color: '#00488C', fontSize: '0.95rem', fontWeight: 600, marginBottom: '6px' }}>Outcome</h4>
+                <h4 style={{ color: '#00488C', fontSize: '0.95rem', fontWeight: 600, marginBottom: '6px', fontFamily: 'var(--font-geist-mono), monospace' }}>Outcome</h4>
                 <p style={{ color: '#111', fontSize: '0.85rem', lineHeight: '1.6' }}>
                   Our approach is built around acting as a direct extension of the lessor's technical and commercial interests.
                 </p>
@@ -187,7 +187,7 @@ export default function ApproachPage() {
         {/* Section: Technical Oversight */}
         <section id="technical-oversight" className="flex flex-col lg:flex-row items-stretch justify-between gap-12 lg:gap-16" style={{ marginBottom: '120px', scrollMarginTop: '120px' }}>
           <div className="w-full lg:w-[46%]">
-            <p style={{ color: '#00488C', fontSize: '0.85rem', fontWeight: 700, letterSpacing: '0.05em', marginBottom: '16px', fontFamily: 'var(--font-geist-mono), monospace', textTransform: 'uppercase' }}>
+            <p style={{ color: '#00488C', fontSize: '0.85rem', fontWeight: 700, letterSpacing: '0.05em', marginBottom: '16px', fontFamily: 'var(--font-geist-mono), monospace' }}>
               03 - Approach
             </p>
             <h2 style={{ fontSize: 'clamp(2.2rem, 3.5vw, 3.2rem)', color: '#111', fontWeight: 600, marginBottom: '24px', letterSpacing: '-0.01em', lineHeight: 1.1 }}>
@@ -198,7 +198,7 @@ export default function ApproachPage() {
             </p>
 
             <div style={{ marginTop: '40px' }}>
-              <h3 style={{ color: '#00488C', fontSize: '0.9rem', fontWeight: 700, letterSpacing: '0.05em', marginBottom: '24px' }}>Processes & Methodologies</h3>
+              <h3 style={{ color: '#00488C', fontSize: '0.9rem', fontWeight: 700, letterSpacing: '0.05em', marginBottom: '24px', fontFamily: 'var(--font-geist-mono), monospace' }}>Processes & Methodologies</h3>
               <ul style={{ position: 'relative', listStyle: 'none', paddingLeft: '0', display: 'flex', flexDirection: 'column', gap: '24px', margin: 0 }}>
                 <div style={{ position: 'absolute', left: '5px', top: '8px', bottom: '12px', width: '1.5px', backgroundColor: '#00488C' }} />
                 {[
@@ -225,7 +225,7 @@ export default function ApproachPage() {
                 <path d="M9 12l2 2 4-4" stroke="#00488C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
               <div>
-                <h4 style={{ color: '#00488C', fontSize: '0.95rem', fontWeight: 600, marginBottom: '6px' }}>Outcome</h4>
+                <h4 style={{ color: '#00488C', fontSize: '0.95rem', fontWeight: 600, marginBottom: '6px', fontFamily: 'var(--font-geist-mono), monospace' }}>Outcome</h4>
                 <p style={{ color: '#111', fontSize: '0.85rem', lineHeight: '1.6' }}>
                   Sustained technical integrity and minimized value erosion during operations.
                 </p>
