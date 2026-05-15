@@ -92,7 +92,7 @@ export default function Help() {
               fontFamily: 'var(--font-poppins), Poppins, sans-serif',
             }}
           >
-            We&apos;re here to help
+            Ready to optimize your aviation assets?
           </h2>
 
           <p
@@ -106,7 +106,7 @@ export default function Help() {
               fontFamily: 'var(--font-poppins), Poppins, sans-serif',
             }}
           >
-            we&apos;re ready to take your call and begin your aviation asset management, valuation, and more . Reach out today to get started
+            Start your aviation asset strategy with confidence.<br />Contact us now.
           </p>
 
           <Link

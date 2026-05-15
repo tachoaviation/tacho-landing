@@ -66,7 +66,7 @@ export default function RootLayout({
               "description": "Independent, conflict-free, and commercially aware technical advisory for aviation assets.",
               "contactPoint": {
                 "@type": "ContactPoint",
-                "telephone": "9645000747",
+                "telephone": "+919645000747",
                 "contactType": "Customer Service"
               }
             })

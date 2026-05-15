@@ -168,7 +168,7 @@ export default function Home() {
               fontWeight: 100,
               fontFamily: 'var(--font-poppins), Poppins, sans-serif',
             }}>
-              Bridging the gap between technical status and commercial value for the modern aircraft lessor. Tacho positions itself as a technical extension of the lessor, focusing on Precision Over Assumptions to mitigate risks during lease transitions and maintenance events.
+              Bridging the gap between technical status and commercial value for the modern aircraft lessor. Tacho is a technical extension of the lessor, focusing on Precision Over Assumptions to mitigate risks during lease transitions and maintenance events.
             </p>
             <p style={{
               color: '#545352',
@@ -178,7 +178,7 @@ export default function Home() {
               fontWeight: 100,
               fontFamily: 'var(--font-poppins), Poppins, sans-serif',
             }}>
-              Bridging the gap between technical status and commercial value for the modern aircraft lessor. Tacho positions itself as a technical extension of the lessor.
+              We provide modern lessors with a clear, updated view of their aircraft's value, risks, and revenue potential. By aligning technical reality with commercial objectives, we safeguard your investments across every stage of the asset lifecycle.
             </p>
           </div>
 
@@ -513,7 +513,7 @@ export default function Home() {
                   fontFamily: 'var(--font-poppins), Poppins, sans-serif',
                 }}
               >
-                Most leasing firms outsource their inspections; we lead with them. By maintaining in-house expertise in aircraft and engine inspections. We identify potential technical liabilities long before they impact your bottom line.
+                While most leasing firms outsource inspections, we conduct them in-house. By maintaining deep expertise in aircraft and engine inspections, we identify potential technical liabilities long before they impact your bottom line.
               </p>
             </div>
 
