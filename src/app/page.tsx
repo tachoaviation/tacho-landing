@@ -83,17 +83,17 @@ export default function Home() {
               letterSpacing: '-0.01em',
               fontFamily: 'inherit'
             }}>
-              Managing Assets<br />for you
+              Managing Aviation<br />Assets for you
             </h1>
             <p style={{ 
               color: 'rgba(255, 255, 255, 0.7)',
               fontSize: '1rem',
               marginBottom: '32px',
               lineHeight: 1.7,
-              maxWidth: '400px',
+              maxWidth: '480px',
               fontFamily: 'inherit'
             }}>
-              Let us handle the logistics, so you can focus on<br className="hidden lg:block" /> growing your business.
+              End-to-end aviation asset management driven by in-house expertise. We lead the inspections, ensure compliance, and safeguard your revenue potential.
             </p>
             <div>
               <HeroButton href="/contact#contact-form">
