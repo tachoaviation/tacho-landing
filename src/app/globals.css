@@ -239,3 +239,30 @@ body {
     background-color: #274AAB !important;
   }
 }
+
+@keyframes approachMobileReveal {
+  from {
+    opacity: 0;
+    transform: translateY(26px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1023px) {
+  .approach-mobile-reveal {
+    opacity: 0;
+    transform: translateY(26px);
+    animation: approachMobileReveal 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+  }
+
+  .approach-mobile-delay-1 {
+    animation-delay: 0.12s;
+  }
+
+  .approach-mobile-delay-2 {
+    animation-delay: 0.2s;
+  }
+}
