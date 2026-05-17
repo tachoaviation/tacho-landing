@@ -74,7 +74,7 @@ export default function Home() {
               fontFamily: 'var(--font-poppins), Poppins, sans-serif',
             }}
           >
-            <h1 style={{ 
+            <h1 className="home-hero-title" style={{ 
               color: '#ffffff',
               fontSize: '3.25rem',
               fontWeight: 600,
@@ -85,7 +85,7 @@ export default function Home() {
             }}>
               Managing Aviation<br />Assets for you
             </h1>
-            <p style={{ 
+            <p className="home-hero-subtitle" style={{ 
               color: 'rgba(255, 255, 255, 0.7)',
               fontSize: '1rem',
               marginBottom: '32px',
